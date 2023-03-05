@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button_purchase{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.books_cart{
+    margin-top: 20px;    
+}
+
+.book_cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.book_title{
+    width: 45%;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 80px;
+}
+
+.book_cart .book_count, .book_price{
+    width: 10%;
+    text-align: left; 
+    font-size: 16px;
+}
+
+.book_cart .book_totalPrice{
+    width: 60%;
+    text-align: right; 
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.totalPrice{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.content_cartEmpty{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button_purchase{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.button_cart:hover{
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.button_purchase button{
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    height: 30px;
+    padding: 2px 14px;
+    cursor: pointer;
+}
+
+.button_purchase button:hover{
+    background-color: lightblue;
+}
+
+.button_purchase button:disabled{
+    padding: 5px 10px;
+    cursor: none;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    border-radius: 5px;
+}
+
+.cartImg{
+    width: 20%;
+}
+
+.toTheCatalog{
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+    display: block;
+    margin-top: 40px;
+}
+
+.summary{
+    text-align: right;
+    font-size: 16px;
+    color: blue;
+}

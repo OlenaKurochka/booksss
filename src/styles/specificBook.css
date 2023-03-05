@@ -1,0 +1,227 @@
+:root{
+    font-size: 10px;
+ 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.main{
+    margin: 50px 20px;
+    height: 79vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-main_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content a img{
+    height: 50px;
+}
+
+.book-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    text-align: left;   
+}
+
+.book-content img{
+    height: 250px;
+    transition: all 1s;
+}
+
+.book-content img:hover{
+    transform: scale(2) translate(30%, 10%);
+    cursor: zoom-in;
+}
+
+
+
+
+.book-about p, .book-price{
+    font-weight: 700;
+}
+
+
+.book-about p span, .book-description p span{
+    font-weight: 400;
+}
+
+.book-description p{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;  
+    line-height: 3rem; 
+}
+
+.book-price{
+    display: flex;
+    flex-direction: column;
+    border: 1px  dashed black;
+    padding: 5px 15px;
+    width: 25%;
+}
+
+
+input[type=number] {
+    height: 30px;
+}
+input[type=number]:hover::-webkit-inner-spin-button {  
+    width: 14px;
+    height: 30px;
+}
+
+.book-price div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+}
+
+.book-price div label{
+    width: 30%;
+}
+
+.book-price div input{
+    width: 20%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.book-price div input::placeholder{
+    text-align: right;
+}
+
+#total{
+    text-align: right;
+    width: 60%;
+}
+
+.price-btn{
+display: flex;
+justify-content: end !important;
+
+
+}
+
+
+
+.btn {
+    height: 45px;
+    width: 50%;
+    background-color: rgb(231, 231, 231);
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 235ms ease-in-out;
+    border: 2px solid black;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+#btn_add_to_cart:disabled{
+    border: none;
+    color: gray;
+}
+
+
+.total_black{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.total_red{
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.infoOfBook{
+    color: red;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*  */
+.varButton{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 50% !important;
+}
+
+.quantity, .sumTotal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sumTotal{
+    margin-top: 30px;
+}
+
+.price-btn_varButton{
+    width: 100%;
+}
+
+.price-btn_varButton button{
+    margin-left: 50%;
+    margin-top: 30px;
+}
+
+.quantity_buttons{
+    width: 40%;
+}
+
+.quantity_buttons p{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+
+.quantity_buttons button{
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#btn_more:hover{
+    color: green;
+}
+
+#btn_less:hover{
+    color: red;
+}
+
+/*  */

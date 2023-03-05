@@ -1,0 +1,24 @@
+
+
+.page404_content{
+    margin: 40px;
+}
+
+.page404_title{
+    font-size: 32px;
+    color: #4FCAFA;
+}
+
+.page404_text{
+    color: #D236A2;
+    margin: 0;
+}
+
+.img404{
+    width: 800px;
+}
+
+hr{
+    margin: 0;
+    border: 1px solid lightblue;
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.signin{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.main-content img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.main-content h2{
+    margin-bottom: 5px;
+}
+
+.main-content input{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.main-content input::placeholder{
+text-align: center;
+color: black;
+}
+
+.active{
+    width: 202px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    margin-bottom: 10px;
+    padding: 0;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.disabled{
+    width: 202px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 320px ) {
+    .main-content img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .main-content input{
+        width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .main-content button{
+        width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+}

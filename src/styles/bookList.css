@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+:root{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-main_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    margin: 0;
+    height: 50px;
+}
+
+.input-search{
+    margin: 3rem;
+    display: flex;
+}
+
+
+.input-search__name{
+    height: 4rem;
+    width: 20%;
+    padding-left: 1rem;
+    margin-right: 3rem;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.input-search__name::placeholder, .input-search__price::placeholder{
+    font-size: 2rem;
+}
+
+.input-search__price{
+    height: 4rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 10%;
+    padding-left: 1rem;
+}
+
+
+
+.books-gallery, .books-gallery_price{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.books-gallery_disable, .books-gallery_price_disable{
+    display: none;
+}
+
+.divForBook{
+    border: 1px solid black;
+    margin: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 80rem;
+}
+
+.divForBook:hover{
+    border: 1px solid blue;
+}
+
+.booksImg{
+    height: 70%;
+}
+
+.booksTitle{
+    font-size: 2.5rem;
+    height: 5%;
+}
+
+.booksAuthor{
+    font-weight: 400;
+    font-size: 2rem;
+    height: 5%;
+}
+
+
+.divFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+}
+
+.booksPrice{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.buttonView{
+    width: 80px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb(231, 231, 231);
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 235ms ease-in-out;
+    border: 2px solid black;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+.linkView{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.buttonView:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.please_signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88vh;
+}
+
+.please_signin_button{
+    height: 80px;
+    width: 160px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    cursor: pointer;
+}
+
+.please_signin_button:hover{
+    background-color: lightblue;
+}
+
+.title_noResult{
+    color: red;
+}
+
+.up_btn{
+    position: fixed;
+    z-index: 2;
+    top: 850px;
+    right: 15px;
+    background: none;
+    border: 2px solid rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all .2s ease;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+}
+
+.up_btn:hover{
+    border: 2px solid blue;
+}

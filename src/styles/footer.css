@@ -1,0 +1,18 @@
+.footer_content{
+    background-color: rgba(79, 202, 250, 0.1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightblue;
+    border-left: none;
+    border-right: none;
+}
+
+.footer_title{
+    font-size: 16px;
+}
+
+.footer_link{
+    color: #4FCAFA;
+}
