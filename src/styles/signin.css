@@ -40,6 +40,7 @@ body{
     border: 1px solid black;
     margin-bottom: 20px;
     padding: 0;
+    padding-left: 5px;
 }
 
 .main-content input::placeholder{

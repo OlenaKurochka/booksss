@@ -65,7 +65,7 @@ export default function Cart(props) {
                     
                     <div className="main_content">
                         <img className="cartImg" src={cart} alt="cart_image"/>
-                        <h1>Cart empty...</h1> 
+                        <h1>Cart is empty...</h1> 
                         <Link className="toTheCatalog" to="/bookList">Go to the catalog &#128218;</Link>                    
                     </div>
                 </div>

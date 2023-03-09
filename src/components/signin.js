@@ -6,7 +6,7 @@ import avatar from '../img/avatar.png'
 import question from "../img/question.png"
 
 export default function Signin({onClick}) {
-    const [username, setUsername] = useState("Enter your name");
+    const [username, setUsername] = useState("Enter your username");
     const [istrue, Setistrue] = useState(false);
     const [isValidate, SetIsValidate] = useState(false);
     let user = {
