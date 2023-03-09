@@ -4,7 +4,7 @@ import {Link, Navigate} from "react-router-dom";
 import '../styles/bookList.css'
 import imageNotFound from "../img/imageNotFound.png"
 import { BooksProvider } from "../context/booksContext";
-import Header from "./header";
+
 
 
 export default function BookList(props) {
@@ -72,7 +72,6 @@ export default function BookList(props) {
     else{
         return(
             <section className="book_list">
-                <Header />
                 
                 <div className="input-search">
                     <input onChange={filter} type="search" name="Search my book name" id="input-search__name" className="input-search__name" placeholder="Search my book name"/>

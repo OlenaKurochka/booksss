@@ -2,7 +2,6 @@ import React from "react";
 import {Navigate, Link} from "react-router-dom";
 import '../styles/cart.css'
 import cart from '../img/cart.svg'
-import Header from "./header";
 
 export default function Cart(props) {
     const user = JSON.parse(localStorage.getItem('user'))
@@ -34,7 +33,6 @@ export default function Cart(props) {
     if(usersBooks.length>0){
         return(
             <section className="content">
-                <Header />
                 <div className="main">
                     <div className="button_purchase">
                         <button onClick={clearCart}>Purchase</button>
@@ -60,7 +58,6 @@ export default function Cart(props) {
     }else{
         return(
             <section className="content_cartEmpty">
-                <Header />
                 <div className="main">
                     <div className="button_purchase">
                         <button  disabled className="button">Purchase</button>

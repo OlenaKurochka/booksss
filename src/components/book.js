@@ -3,7 +3,6 @@ import {Navigate, useLocation} from "react-router-dom";
 import '../styles/specificBook.css'
 import imageNotFound from "../img/imageNotFound.png"
 import { BooksProvider } from "../context/booksContext";
-import Header from "./header";
 
 export default function Book(props) {
     const books = useContext(BooksProvider)   
@@ -110,7 +109,6 @@ export default function Book(props) {
         
         return(
             <section className="book">
-                <Header />
                 {bookContent}
             </section>
         )        
