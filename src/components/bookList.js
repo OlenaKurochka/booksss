@@ -51,7 +51,7 @@ export default function BookList(props) {
             setFoundTitle(results);
         }else {
             const results = books.books.filter((book) => {
-                return book.title.toLowerCase().startsWith(value.toLowerCase());
+                return book.title.toLowerCase().includes(value.toLowerCase());
             }); 
             setFoundTitle(results);
         }
